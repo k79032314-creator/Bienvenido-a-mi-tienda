@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+}
+
+/* Pantalla de presentación */
+.presentacion {
+  height: 100vh;
+  background: linear-gradient(to bottom, #ffccdd, #fff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.presentacion h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.boton {
+  background-color: #e63946;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.boton:hover {
+  background-color: #d62828;
+}
+
+/* Catálogo */
+.catalogo {
+  padding: 40px;
+}
+
+.catalogo h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.2em;
+  color: #333;
+}
+
+/* Grid de productos */
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.producto {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto h2 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.producto p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.producto .imagen {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 15px;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  border-radius: 8px;
+  font-size: 0.9em;
+}
+
+/* Botón de volver */
+.volver {
+  text-align: center;
+  margin-top: 30px;
+}
